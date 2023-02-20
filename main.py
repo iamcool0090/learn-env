@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return 'Hello, World!'
 
+@app.route('/revise')
+def revise():
+    return None
+    
 if __name__ == '__main__':
     app.run(port=5000)
 
